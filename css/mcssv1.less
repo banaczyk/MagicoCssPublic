@@ -1,0 +1,122 @@
+/* Magico CSS Framework */
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+
+@import url(setting.less);
+
+.respo_1024 {width: 1024px; margin: 0 auto;}
+.respo {margin: 0 auto;}
+
+/* WEB SECTION */
+header, section, footer  {float: left; width: 100%;}
+a {text-decoration: none;}
+img {max-width: 100%;}
+
+/* Own modules */
+/* Menu */
+header {position: relative;}
+.main_menu {list-style: none;}
+.main_menu li {position: relative;}
+.main_menu li ul {display: none; position: absolute; top: 100%; left: -50%; list-style: none;}
+.main_menu li:hover ul{display: block;}
+
+@media all and (min-width:800px) {
+#mobile_menu {display: none; }
+}
+
+@media all and (min-width:0px) and (max-width:800px) {
+	.main_menu {display: none; float: left; width: 100%;}
+	.main_menu li {float: left; width: 100%; text-align: center;}
+	.main_menu li ul {position: relative; top: 0px; left: 0px;}
+	#mobile_menu {display: block; position: absolute; top: 25px; right: 25px;}
+	}
+
+
+
+/* Horizontal menu*/
+.hr_menu {}
+.hr_menu li {}
+
+/* Align */
+.align_left {text-align: left;}
+.align_center {text-align: center;}
+.align_right {text-align: right;}
+.align_justify {text-align: justify}
+ 
+/* GRID (generator) */
+.section {clear: both; padding: 0px; margin: 0px;}
+.col {display: block; float:left; margin: @col_margin;}
+.col:first-child {margin-left: 0;}
+
+/*  GRID OF TWELVE  */
+.col_12_12 {
+	width: 100%;
+}
+
+.col_11_12 {
+  	width: 91.58%;
+}
+.col_10_12 {
+  	width: 83.16%;
+}
+
+.col_9_12 {
+  	width: 74.75%;
+}
+
+.col_8_12 {
+  	width: 66.33%;
+}
+
+.col_7_12 {
+  	width: 57.91%;
+}
+
+.col_6_12 {
+  	width: 49.5%;
+}
+
+.col_5_12 {
+  	width: 41.08%;
+}
+
+.col_4_12 {
+  	width: 32.66%;
+}
+
+.col_3_12 {
+  	width: 24.25%;
+}
+
+.col_2_12 {
+  	width: 15.83%;
+}
+
+.col_1_12 {
+  	width: 7.416%;
+}
+
+
+/* MEDIA */
+@media all and (min-width:1240px){
+  .respo {width: 1240px;}
+}
+
+@media all and (min-width:801px) and (max-width:1240px) {
+  .respo {width: 100%;}
+}
+
+@media all and (min-width:481px) and (max-width:800px) {
+  .respo {width: 100%;}
+  .col {margin: 1% 0 1% 0%; padding: 0 1% 0 1%;}
+  .col_1_12, .col_2_12, .col_3_12, .col_4_12, .col_5_12, .col_6_12, .col_7_12, .col_8_12, .col_9_12, .col_10_12, .col_11_12, .col_12_12 {
+	width: 100%;
+	}
+}
+
+@media all and (min-width:0px) and (max-width:480px) {
+  .respo {width: 100%;}
+  .col {margin: 1% 0 1% 0%; padding: 0 1% 0 1%;}
+  .col_1_12, .col_2_12, .col_3_12, .col_4_12, .col_5_12, .col_6_12, .col_7_12, .col_8_12, .col_9_12, .col_10_12, .col_11_12, .col_12_12 {
+	width: 100%;
+	}
+	}
